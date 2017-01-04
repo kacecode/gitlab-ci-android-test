@@ -21,5 +21,8 @@ before_script:
   - chmod +x ./gradlew
 
 test:
+  tags:
+    - docker
+
   script:
     - ./gradlew test
